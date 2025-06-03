@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "d89fed50-dd23-425d-8a39-25bb0021d65b",
+		"name": "Universidad Santander",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "45169616",
+		"_collection_link": "https://dark-comet-6301676.postman.co/workspace/cef3f934-4ec0-4969-871a-b5e5362cce4c/collection/45169616-d89fed50-dd23-425d-8a39-25bb0021d65b?action=share&source=collection_link&creator=45169616"
+	},
+	"item": [
+		{
+			"name": "Nuevo Alumno",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/alumnos?nombre=Martin&apellido=Zapata&apellido_materno=Ramos&correo_electronico=martin1@test.com&sede_id=5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alumnos"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Martin"
+						},
+						{
+							"key": "apellido",
+							"value": "Zapata"
+						},
+						{
+							"key": "apellido_materno",
+							"value": "Ramos"
+						},
+						{
+							"key": "correo_electronico",
+							"value": "martin1@test.com"
+						},
+						{
+							"key": "sede_id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de Alumnos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/api/alumnos/"
+			},
+			"response": []
+		},
+		{
+			"name": "Alumno por matricula",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/api/alumnos/UNI2025001"
+			},
+			"response": []
+		}
+	]
+}
